@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abucay.abucayquiz1.ComputerScience"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#1F618D"
+        android:text=" B.S. COMPUTER SCIENCE"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:text="Level I accredited by the Philippine Accrediting Association
+        of Schools, Colleges, and Universities"
+        android:id="@+id/textView1"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="Students under the BS Computer Science program are highly trained for software and system development.
+        The program’s main focus is to expose the students to different approaches and styles in developing programs whether they are procedural or the object oriented type of system approach."
+        android:id="@+id/textView2"
+        android:layout_above="@+id/btnHome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="63dp" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="HOME"
+        android:onClick="clickHome"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT PROGRAM"
+        android:onClick="clickInformationTechnology"
+        android:layout_alignBaseline="@+id/btnHome"
+        android:layout_alignBottom="@+id/btnHome"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="IS PROGRAM"
+        android:onClick="clickInformationSystems"
+        android:layout_alignBaseline="@+id/btnIT"
+        android:layout_alignBottom="@+id/btnIT"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

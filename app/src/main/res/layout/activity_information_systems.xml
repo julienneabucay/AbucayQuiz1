@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abucay.abucayquiz1.InformationSystems"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#A04000"
+        android:text="  B.S. INFORMATION
+        SYSTEMS"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:text="Level I accredited by the Philippine Accrediting Association
+        of Schools, Colleges, and Universities"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="Students under the BS Information Systems program are trained to handle the managerial side of computer related activities.
+        The focus of the program is effective management of resources – people, money, and computer facilities, especially in areas involving accounting, projections/estimates/feasibility studies, and the like."
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text="HOME"
+        android:onClick="clickHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CS PROGRAM"
+        android:layout_alignBaseline="@+id/btnHome"
+        android:layout_alignBottom="@+id/btnHome"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickComputerScience"/>
+
+    <Button
+        android:id="@+id/btnIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCS"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="IT PROGRAM"
+        android:onClick="clickInformationTechnology"/>
+
+
+
+
+</RelativeLayout>

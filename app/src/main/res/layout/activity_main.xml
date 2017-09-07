@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.abucay.abucayquiz1.MainActivity"
+    android:background="@drawable/binary">
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:id="@+id/im1"
+        android:layout_height="45dp"
+        android:layout_width="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:text="         INSTITUTE OF INFORMATION
+               AND COMPUTING SCIENCES"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/btnCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:layout_marginTop="50dp"
+        android:onClick="clickComputerScience"
+        android:text="B.S. Computer Science" />
+
+
+    <Button
+        android:id="@+id/btnIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:onClick="clickInformationTechnology"
+        android:text="B.S. Information Technology" />
+
+
+    <Button
+        android:id="@+id/btnIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:onClick="clickInformationSystems"
+        android:text="B.S. Information Systems" />
+
+
+</TableLayout>
